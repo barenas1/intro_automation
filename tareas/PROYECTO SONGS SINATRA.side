@@ -1,0 +1,100 @@
+{
+  "id": "772b2cb9-529c-43bf-bec7-fdcb6e970499",
+  "version": "2.0",
+  "name": "PROYECTO SONGS SINATRA",
+  "url": "https://evening-bastion-49392.herokuapp.com/",
+  "tests": [{
+    "id": "545dbf0b-5cc5-4209-813c-68aff3f5410b",
+    "name": "Eliminar Songs",
+    "commands": [{
+      "id": "86393bd2-8d97-494d-a961-cd8bf2589c9b",
+      "comment": "",
+      "command": "open",
+      "target": "https://evening-bastion-49392.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b62d350-2c24-4587-a05b-ff2f7a97a677",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1344x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "045c8cca-8377-4e88-a2e1-64be71c64b7e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Songs",
+      "targets": [
+        ["linkText=Songs", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Songs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/songs')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Songs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "925fc9ae-9d43-4814-8039-8e28bdbcc058",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),' Canción2')]",
+      "targets": [
+        ["linkText=Edicion222", "linkText"],
+        ["css=#songs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Edicion222')]", "xpath:link"],
+        ["xpath=//ul[@id='songs']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/songs/10')]", "xpath:href"],
+        ["xpath=//section/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edicion222')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "479f8c09-f7c5-4647-9dc4-7413bbf01f84",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='delete this song']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fe3560b-78e1-49ab-8bd3-dec209a3a0bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(11)",
+      "targets": [
+        ["css=li:nth-child(11)", "css:finder"],
+        ["xpath=//ul[@id='songs']/li[11]", "xpath:idRelative"],
+        ["xpath=//li[11]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86040284-aa2c-470f-9615-0e5fcbc6b373",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "linkText=Song deleted",
+      "targets": [],
+      "value": "Song deleted"
+    }, {
+      "id": "c5608c43-2c8e-467a-89db-0d7f0e66641c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f8c6e2b4-3dd3-4d1a-8b3d-79c7057a2330",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://evening-bastion-49392.herokuapp.com/"],
+  "plugins": []
+}
